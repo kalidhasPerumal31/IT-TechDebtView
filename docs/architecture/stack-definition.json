@@ -1,0 +1,23 @@
+{
+  "backend": "Node.js with Express.js",
+  "database": "PostgreSQL",
+  "frontend": "HTML5, CSS3, JavaScript, jQuery",
+  "uiFramework": "AdminLTE (Bootstrap 5)",
+  "templating": "EJS or Handlebars",
+  "integration": [
+    "ServiceNow (data ingest)",
+    "endoflife.date API (enrichment)",
+    "Azure DevOps (risk linkage)"
+  ],
+  "security": [
+    "RBAC",
+    "SSO (Entra ID)",
+    "Encryption in transit and at rest"
+  ],
+  "compliance": [
+    "ISO/IEC 27001",
+    "GDPR",
+    "NIST SSDF",
+    "OWASP ASVS 4.0"
+  ]
+}

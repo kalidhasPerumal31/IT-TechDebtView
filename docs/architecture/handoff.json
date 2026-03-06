@@ -1,0 +1,22 @@
+{
+  "techStackRef": "docs/architecture/stack-definition.json",
+  "moduleMap": "docs/architecture/module-contracts.md",
+  "contractsRef": "docs/architecture/module-contracts.md",
+  "diagramIndex": [
+    "docs/architecture/diagrams/c4-model.md",
+    "docs/architecture/diagrams/sequence-diagrams.md",
+    "docs/architecture/diagrams/erd-high-level.md",
+    "docs/architecture/diagrams/deployment-architecture.md"
+  ],
+  "adrIndex": [
+    "docs/architecture/ADRs/adr-architecture-style.md",
+    "docs/architecture/ADRs/adr-tech-strategy-backend.md",
+    "docs/architecture/ADRs/adr-tech-strategy-frontend.md",
+    "docs/architecture/ADRs/adr-tech-strategy-database.md",
+    "docs/architecture/ADRs/adr-tech-strategy-templating.md",
+    "docs/architecture/ADRs/adr-tech-strategy-ui-framework.md"
+  ],
+  "complianceMap": "docs/requirements/compliance-mapping.md",
+  "nextAgent": "AG-IMP-A-03-Implementation-Agent-A",
+  "nextAgentSpec": "docs/AgentSpecifications/AG-IMP-A-03-Implementation-Agent-A.md"
+}
