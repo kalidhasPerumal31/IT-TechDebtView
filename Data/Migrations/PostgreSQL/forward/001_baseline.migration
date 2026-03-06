@@ -1,0 +1,31 @@
+-- Baseline migration: create all tables
+CREATE TABLE IF NOT EXISTS Posture (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Risk (
+    id SERIAL PRIMARY KEY,
+    description TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS "User" (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS Application (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Integration (
+    id SERIAL PRIMARY KEY,
+    type VARCHAR(255) NOT NULL
+);
+
+-- Relationships
+ALTER TABLE Application ADD COLUMN posture_id INTEGER REFERENCES Posture(id);
+ALTER TABLE Application ADD COLUMN risk_id INTEGER REFERENCES Risk(id);
+ALTER TABLE "User" ADD COLUMN application_id INTEGER REFERENCES Application(id);
+ALTER TABLE Application ADD COLUMN integration_id INTEGER REFERENCES Integration(id);

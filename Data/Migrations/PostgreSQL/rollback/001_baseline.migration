@@ -1,0 +1,6 @@
+-- Rollback migration: drop all tables
+DROP TABLE IF EXISTS "User";
+DROP TABLE IF EXISTS Application;
+DROP TABLE IF EXISTS Integration;
+DROP TABLE IF EXISTS Posture;
+DROP TABLE IF EXISTS Risk;

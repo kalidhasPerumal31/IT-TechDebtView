@@ -1,0 +1,27 @@
+{
+  "agentId": "AG-IMP-B1-04",
+  "agentName": "AG-IMP-B1-04-Implementation-Agent-B1",
+  "techStackRef": "/docs/architecture/stack-definition.json",
+  "identity": {
+    "protocol": "OIDC",
+    "humanFlows": ["signIn", "signOut"],
+    "m2mFlows": ["clientCredentials"],
+    "token": {"type": "jwt", "validation": "implemented"}
+  },
+  "authorization": {
+    "model": "RBAC",
+    "policiesRef": "/src/application/authorization/",
+    "claimsTransformRef": "/src/application/authorization/ClaimsTransformation.js"
+  },
+  "mfa": {"enabled": true, "methods": ["totp", "webauthn"]},
+  "hardening": {
+    "headers": true,
+    "rateLimiting": true,
+    "secretsBootstrap": true,
+    "auditHooks": true
+  },
+  "projectPaths": ["/src/web", "/src/application", "/src/infrastructure"],
+  "adrIndex": ["/docs/architecture/ADRs/"],
+  "nextAgent": "AG-IMP-B2-05-Implementation-Agent-B2",
+  "nextAgentSpec": "/docs/AgentSpecifications/AG-IMP-B2-05-Implementation-Agent-B2.md"
+}

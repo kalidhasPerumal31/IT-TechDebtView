@@ -1,0 +1,21 @@
+{
+  "handoff": "AG-IMP-B2-05 Phase 5 JSON Handoff",
+  "date": "2026-03-06",
+  "artefacts": {
+    "schema": "docs/database/schema-definition.md",
+    "migrations": "Data/Migrations/",
+    "repository": "src/repository/",
+    "di": "src/di/",
+    "erd_mermaid": "docs/diagrams/erd.mermaid.md",
+    "erd_plantuml": "docs/diagrams/erd.plantuml.md",
+    "erd_ascii": "docs/diagrams/erd.ascii.md",
+    "erd_explanation": "docs/database/erd-explanation.md",
+    "persistence_validation_report": "docs/database/persistence-validation-report.md"
+  },
+  "compliance": {
+    "rtm": true,
+    "adr": true,
+    "clean_architecture": true
+  },
+  "notes": "All artefacts validated and HITL approved. Ready for downstream consumption."
+}

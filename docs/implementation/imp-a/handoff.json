@@ -1,0 +1,39 @@
+{
+  "agentId": "AG-IMP-A-03",
+  "agentName": "AG-IMP-A-03-Implementation-Agent-A",
+  "techStackRef": "/docs/architecture/stack-definition.json",
+  "moduleMap": [
+    "/src/domain",
+    "/src/application",
+    "/src/infrastructure",
+    "/src/web"
+  ],
+  "contractsRef": "/docs/architecture/module-contracts.md",
+  "projectPaths": [
+    "/src/domain",
+    "/src/application",
+    "/src/infrastructure",
+    "/src/web"
+  ],
+  "dependencyMap": {
+    "web": ["application"],
+    "application": ["domain"],
+    "infrastructure": ["application", "domain"],
+    "domain": []
+  },
+  "buildValidation": {
+    "structure": "validated",
+    "diPipeline": "validated",
+    "moduleBoundaries": "validated"
+  },
+  "adrIndex": [
+    "/docs/architecture/ADRs/adr-architecture-style.md",
+    "/docs/architecture/ADRs/adr-tech-strategy-backend.md",
+    "/docs/architecture/ADRs/adr-tech-strategy-frontend.md",
+    "/docs/architecture/ADRs/adr-tech-strategy-database.md",
+    "/docs/architecture/ADRs/adr-tech-strategy-templating.md",
+    "/docs/architecture/ADRs/adr-tech-strategy-ui-framework.md"
+  ],
+  "nextAgent": "AG-IMP-B1-04-Implementation-Agent-B1",
+  "nextAgentSpec": "/docs/AgentSpecifications/AG-IMP-B1-04-Implementation-Agent-B1.md"
+}
